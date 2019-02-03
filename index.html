@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LCO JUICE SHOP</title>
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="icon" href="./img/lco_logo.png">
+        <style>
+            body{
+                background-color: #faebd1;
+            }
+            h1{
+                color: green;
+                font-size: 20px;
+                text-align: center;
+            }
+            #headerIt{
+                width: 100%;
+                height: 478px;
+                background-image: url("./img/orange-juice.jpg");
+            }
+            .testimonials {
+            padding-top: 7rem;
+            padding-bottom: 7rem;
+            }
+
+            .testimonials .testimonial-item {
+            max-width: 18rem;
+            }
+
+            .testimonials .testimonial-item img {
+            max-width: 14rem;
+            -webkit-box-shadow: 0px 5px 5px 0px #adb5bd;
+            box-shadow: 0px 5px 5px 0px #adb5bd;
+            }
+            .call-to-action {
+            position: relative;
+            background: url("./img/orange-juice.jpg") no-repeat center center;
+            background-size: cover;
+            padding-top: 10rem;
+            padding-bottom: 9rem;
+            }
+            .call-to-action .overlay {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0.3;
+            }
+            .mb-4{
+                color: rgb(255, 255, 255);
+                position: relative;
+                top: 2px;
+            }
+            p{
+                font-size: 20px;
+            }
+            .image {
+                width: 300;
+                height: 300;
+                }
+
+            .overlay {
+            position: absolute;
+            top: 0;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: #ffa500;
+            }
+
+            .container1:hover .overlay {
+            opacity: 1;
+            }
+
+            .text {
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+            }
+            .container1 {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            
+            position: relative;
+            width: 300px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm bg-secondary fixed-top" id="navBar">
+            <div class="container">
+               <ul class="navbar-nav">
+                  <li class="nav-item">
+                <a class="navbar-brand" href="#">
+                    <img src="./img/lco_logo.png" width="50" height="50" alt="IconNotAvailable">
+                </a>
+                <li class="navbar-brand">
+                <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="navbar-brand">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+             </ul>
+             <a class="btn btn-success" href="#">Cart</a>
+            </div>
+        </nav>
+        <!-- Call to Action -->
+        <section class="call-to-action text-white text-center">
+        <div class="overlay"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-10 mx-auto">
+              <h2 class="mb-4">LCO JUICE SHOP</h2>
+            </div>
+            <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+                <form>
+                <div class="form-row">
+                  <div class="col-12 col-md-9 mb-2 mb-md-0">
+                    <input list="pdt" class="form-control form-control" placeholder="Search Products">
+                    <datalist id="pdt">
+                            <option value="Lemon Juice">
+                            <option value="Orange Juice">
+                            <option value="Strawberry Juice">
+                            <option value="Gova Juice">
+                    </datalist>
+                </div>
+                  <div class="col-12 col-md-3">
+                    <button type="button" class="btn btn-block btn btn-primary">Search</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+        <section class="testimonials text-center bg-light" id="about">
+            <div class="container">
+              <h2 class="mb-5" >About Us</h2>
+               <div class="row">
+                       <p>
+                        Are you tired of getting sick and having low energy all the time?
+                        Fruits juicing has changed our lives, and we want your life to be 
+                        changed for the better too!. It offers an abundance of
+                          vitamins, minerals, enzymes, phytonutrients and antioxidants that 
+                          increase the micro-electric potential of the cells. This improves 
+                          the body&apos;s use of oxygen, so both the muscles and brain are energized.     
+                        </p>
+               </div>
+            </div>
+        </section>  
+        <div class="testimonials text-center bg-light">
+                <div class="container"> <h2 class="mb-5">Our Products</h2></div>
+                <div>
+                <table class="table table-responsive">
+                <tr>
+                <td>
+                <span class="container1">
+                        <img src="./img/orange-juice.jpg" alt="" width="300" height="300" class="image">
+                        <span class="overlay">
+                            <span class="text">Orange Juice Rs.40<br><br><br><br><br><br></span>
+                            <span class="text">
+                            <button class="btn btn-outline-success">Add To Cart</button>
+                            </span>
+                        </span>
+                </span>
+                </td>
+                <td>
+                <span class="container1">
+                        <img src="./img/lemon-juice1.jpg" alt="" width="300" height="300" class="image">
+                        <span class="overlay">
+                            <span class="text">Lemon Juice Rs.50<br><br><br><br><br><br></span>
+                            <span class="text">
+                            <button class="btn btn-outline-success">Add To Cart</button>
+                            </span>
+                        </span>
+                </span>
+                </td>
+                <td>
+                    <span class="container1">
+                            <img src="./img/strawberry juice.jpg" alt="" width="300" height="300" class="image">
+                            <span class="overlay">
+                                <span class="text">strawberry Juice Rs.100<br><br><br><br><br><br></span>
+                                <span class="text">
+                                <button class="btn btn-outline-success">Add To Cart</button>
+                                </span>
+                            </span>
+                    </span>
+                </td>
+                <td>
+                    <span class="container1">
+                            <img src="./img/Gova.jpg" alt="" width="300" height="300" class="image">
+                            <span class="overlay">
+                                <span class="text">Gova Juice Rs.75<br><br><br><br><br><br></span>
+                                <span class="text">
+                                <button class="btn btn-outline-success">Add To Cart</button>
+                                </span>
+                            </span>
+                    </span>
+                </td>
+                </table>
+                </div> 
+        </div>
+        <section class="testimonials text-center bg-light">
+                <div class="container">
+                  <h2 class="mb-5">What people are saying...</h2>
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <img class="img-fluid rounded-circle mb-3" src="img/testimonials-11.jpg" alt="">
+                        <h5>Omkumar</h5>
+                        <p class="font-weight-light mb-0">"This is fantastic! Speed Delivery and More offer"</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <img class="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpeg" alt="">
+                        <h5>Nithishkumar</h5>
+                        <p class="font-weight-light mb-0">"This is an amazing online juice store."</p>
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="testimonial-item mx-auto mb-5 mb-lg-0">
+                        <img class="img-fluid rounded-circle mb-3" src="img/testimonials-33.jpg" alt="">
+                        <h5>Deepak Chandh</h5>
+                        <p class="font-weight-light mb-0">"Fresh juice makes me more healthy"</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+        </section>
+        <section class="testimonials text-center bg-light" id="contact">
+                <div class="container">
+                  <h2 class="mb-5">Contact Us</h2>
+                </div>
+                <table class="table table-striped">
+                    <tr>
+                        <td><strong>Phone Number</strong></td>
+                        <td>+91 8012370413</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Reach Us</strong></td>
+                        <td>25, Ayyalu Balusamy Lane, East-veli-street, Madurai, TamilNadu, India</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Send Queries</strong></td>
+                        <td>lcoqueries@gmail.com</td>
+                    </tr>
+                </table>
+        </section>
+        <footer>
+            <p style="text-align:center;color: #333;">&copy;Copy Right 2019</p>
+        </footer>
+    </body>
+</html>
